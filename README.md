@@ -15,6 +15,10 @@ curl -XPOST "$ES_HOST/_aliases" -d '{ "actions" : [{ "add" : { "index" : "articl
 
 from the repl:
 ```clj
+es101-binary.core> (init-client)
+Connecting to ip1,ip2,ip3 on cluster cluster-name
+:ok
+contemplate => nil
 es101-binary.core> (index-article-light "44" {:foo "barbaz"})
 {:index "article-with-light",
  :_index "article-with-light",
